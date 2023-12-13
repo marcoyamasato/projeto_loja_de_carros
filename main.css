@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+
+header,
+footer {
+    background-color: #192a56;
+    padding-top: 16px;
+    color: white;
+}
+
+header{
+    position: sticky /* é como um fixar linha do excel*/;
+    top: 0;
+    z-index: 1;
+}
+
+header > .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+nav{
+    background-color: #575fcf;
+    padding: 10px 0;
+    display: none;
+}
+
+nav li{
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+nav li a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.menu-hamburguer{
+    width: 32px;
+    cursor: pointer;
+}
+
+
+.menu-hamburguer span{
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    display: block;
+    margin-bottom: 4px;
+
+}
+
+.container-flex{
+    display: flex;
+}
+
+
+#sobre-a-loja img{
+    max-width: 480px;
+    margin-right: 48px;
+}
+
+
+section{
+    padding: 48px 0;
+}
+
+section h2{
+    margin-bottom: 16px;
+}
+
+.lista-veiculos{
+    flex-wrap: wrap;
+}
+
+.lista-veiculos li{
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 20px;
+}
+
+.lista-veiculos img{
+    width: 100%;
+}
+
+.lista-veiculos h3{
+    margin: 16px 0;
+}
+
+.price{
+    margin: 16px 0;
+    display: block; /*Por padrão ele é um elemento com display inline. Se não mudarmos para block, não tem como aplicar a margem no topo e na parte de baixo*/
+}
+
+.price del{
+    color: #ccc;
+    font-size: 14px;
+}
+
+.lista-veiculos button,
+#botao_enviar{
+    display: block;
+    width: 100%;
+    background-color: green;
+    border: none;
+    padding: 8px 0;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+    color: #fff;
+}
+
+.imagem_central{
+    margin: 0 5%; /*perceba que os li preenchem 30%. Como são três imagens para cada linha, sobra 10% pra trabalhar*/
+}
+
+form{
+    max-width: 360px;
+    margin-bottom: 50px;
+}
+
+.form-campo,
+.container h2{
+    margin-bottom: 10px;
+}
+
+.form-campo label{
+    display: block;
+    font-weight: bold;
+}
+
+.form-campo input,
+.form-campo textarea{
+    width: 100%;
+    padding: 8px;
+    display: block;
+}
+
+.form-campo textarea{
+    resize: none;
+    height: 120px;
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+
